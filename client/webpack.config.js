@@ -19,7 +19,7 @@ module.exports = () => {
 
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Text Editor',
+        title: 'J.A.T.E',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -28,11 +28,11 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Text Editor',
-        short_name: 'TE-PWA',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E',
         description: 'A simple PWA text editor.',
-        background_color: '#40e0d0',
-        theme_color: '#40e0d0',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: '/',
         publicPath: '/',
         icons: [
@@ -43,7 +43,6 @@ module.exports = () => {
           },
         ],
       }),
-
     ],
 
     module: {
